@@ -51,9 +51,9 @@
     $alpha = ['E', 'A', 'D', 'B', 'A', 'C', 'A', 'B', 'E', 'E', 'A', 'A', 'C'];
     $serch = 'A';
     $kai = 0;
-    foreach($alpha as $alpha){
+    foreach($alpha as $v){
         //echo $alpha;
-        if($alpha == $serch){
+        if($v == $serch){
             $kai++;
         }
     }
@@ -68,7 +68,7 @@
     $english = 70;
     $math = 70;
     $total = $english + $math;
-    if ($total >= 60 && $total >= 140) {
+    if ($english >= 60 && $math >= 60 && $total >= 140) {
         echo "合格！";
     } else {
         echo "残念！";
@@ -94,3 +94,15 @@
         echo "素数 : ${n} <br>\r\n";
     }
     echo ('<br><hr>');
+
+    // $primeNumbers = [];
+    // for ($i=2; $i < 100; $i++) {
+    //     for ($j=2; $j < $i; $j++) {
+    //         if ($i%==0 && $j<$i) {
+    //             break;
+    //         }
+    //         if ($i===$j) {
+    //             $primeNumbers[] = $i;
+    //         }
+    //     }
+    // }
